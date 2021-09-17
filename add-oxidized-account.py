@@ -26,7 +26,7 @@ arista_3 = {
 }
 
 # command to run on switches
-commands = ['username oxidized privilege 15 role network-admin secret sha512 <secret>']
+commands = ['username oxidized privilege 15 role network-operator secret sha512 <secret>']
 
 # for loop to connect to devices in enabled mode, run on switches, write config, and print output
 for device in (arista_1, arista_2, arista_3):
@@ -38,6 +38,3 @@ for device in (arista_1, arista_2, arista_3):
     print(output)
     print('#' * 70)
     print()
-
-# gracefully end connection
-net_connect.disconnect()

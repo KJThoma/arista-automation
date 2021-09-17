@@ -29,7 +29,3 @@ for device in (arista_1, arista_2):
     print(output)
     print('#' * 70)
     print()
-
-# gracefully end connection
-net_connect.disconnect()
-
